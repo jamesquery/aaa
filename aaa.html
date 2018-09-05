@@ -7,8 +7,29 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link rel="shortcut icon" href="picMadeByMatools_48px.ico" type="image/x-icon">
+<style type="text/css" media="screen">
+	.icon {
+	    display: inline-block;
+	    width: 20px; height: 20px;
+	    overflow: hidden;
+	}
+	.icon-del {
+	    background: url(delete.png) no-repeat center;
+	}
+	.icon > .icon {
+	    position: relative;
+	    left: -20px;
+	    border-right: 20px solid transparent;
+	    -webkit-filter: drop-shadow(20px 0);
+	    filter: drop-shadow(20px 0);
+	}
+	.red{ color: red; }
+</style>
 </head>
 <body>
-    aaa
+    <p><strong>原始图标</strong></p>
+    <i class="icon icon-del"></i>
+    <p><strong>可以变色的图标</strong></p>
+    <i class="icon"><i class="icon icon-del red"></i></i>
 </body>
 </html>
